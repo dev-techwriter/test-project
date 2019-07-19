@@ -1,1 +1,49 @@
-This is an HTML index page.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.googleapis.com",
+  "@type": "ARArtifact",
+
+  // Designate a unique image as the target that triggers your Google Lens content.
+  "arTarget": {
+
+    // The value of arTarget.@type must be ARImageTarget for standard Lens content.
+    "@type": "ARImageTarget",
+
+    // Add a title for the unique target image.
+    "name" : "1001 Video Games to Play Before You Die (arTarget.name)",
+
+    // Optional: Add a description that supplements the title of the image.
+    "description": "A well-known book (arTarget.description)",
+
+    // Add an absolute link to a digital version of the unique image.
+    "image": "https://github.com/michaelmauzy/test-project/blob/master/target-image.jpeg"
+
+  },
+  // Add the content card to be displayed when your target image is recognized.
+  "arContent": {
+
+    // The value of arContent.@type must be WebPage for standard Lens content.
+    "@type": "WebPage",
+
+    // Add a name to be displayed as the title of the card.
+    "name": "1001 Video Games to Play Before You Die (arContent.name)",
+
+    // Optional: Add an absolute link to an image to display on the card.
+    "image": "https://github.com/michaelmauzy/test-project/blob/master/hero-image.jpg",
+
+    // Add an absolute link to the page that opens when the end user taps the card.
+    "url": "https://en.wikipedia.org/wiki/1001_Video_Games_You_Must_Play_Before_You_Die",
+
+    "publisher": {
+
+      // The value of publisher.@type must be Organization.
+      "@type": "Hatomie-test",
+
+      // Add the name of the content publisher.
+      "name": "Hatomie",
+
+      // Add an absolute link to the publisher logo.
+      "logo": "https://github.com/michaelmauzy/test-project/blob/master/pub-icon.png"
+  }
+}
+</script>
